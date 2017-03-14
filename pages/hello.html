@@ -1,8 +1,55 @@
-<html>
-  <head>
-    <title>hello</title>
-  </head>
-  <body>
-      hello hello
-  </body>
+---
+---
+<html manifest="">
+<head>
+  <title>特性检测</title>
+  <meta charset="utf-8"/>
+</head>
+<body>
+  <img src="{{ site.url }}/assets/avatar_430.png"  style="display:none;"/>
+  <img src=""/>
+  <div id="root">
+  <div id="info">向下滚动就能看到我</div>
+  <div id="target"></div>
+</div>
+
+<style>
+  #root {
+    position: relative;
+    width: 200px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: scroll;
+    border: 1px solid #ccc;
+  }
+
+  #info {
+    position: fixed;
+  }
+
+  #target {
+    position: absolute;
+    top: calc(100vh + 500px);
+    width: 100px;
+    height: 100px;
+    background: red;
+  }
+</style>
+
+<script>
+  let observer = new IntersectionObserver(() => {
+    if (!target.isIntersecting) {
+      info.textContent = "我出来了"
+      target.isIntersecting = true
+    } else {
+      info.textContent = "向下滚动就能看到我"
+      target.isIntersecting = false
+    }
+  }, {
+    root: root
+  })
+
+  observer.observe(target)
+</script>
+</body>
 </html>

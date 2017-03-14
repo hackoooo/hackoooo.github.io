@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Hackooo!"
+title:  "example"
 date:   2017-01-20 11:33:29 +0800
+description: "jekyll example"
 categories: jekyll update
 comments: true
 # other options
@@ -50,7 +51,8 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
 /*
 var disqus_config = function () {
 this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable

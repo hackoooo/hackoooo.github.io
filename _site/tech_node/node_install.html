@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>道剑</title>
-  <meta name="description" content="聊聊技术，聊聊生活">
+  <title>node 安装</title>
+  <meta name="description" content="node 版本管理1 brew install nvm # 安装nvm,nvm是版本管理的工具 source $(brew --prefix nvm)/nvm.sh #安装完，在shell的配置文件(例如~/.bashrc)中加入配置 nvm ls # 查看有哪些node版本 nvm install v6.10....">
 
   <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="/">
+  <link rel="canonical" href="/tech_node/node_install.html">
   <link rel="alternate" type="application/rss+xml" title="道剑" href="/feed.xml">
   
   
@@ -60,28 +60,57 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <!-- <script src="//cdn.ckeditor.com/4.6.2/full-all/ckeditor.js"></script> -->
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-<!-- <script src="/assets/ckeditor/ckeditor.js"></script>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">node 安装</h1>
+    <p class="post-meta"><time datetime="2017-03-14T11:50:32+08:00" itemprop="datePublished">Mar 14, 2017</time></p>
+  </header>
 
-<textarea name="editor1"></textarea>
+  <div class="post-content" itemprop="articleBody">
+    <p>node 版本管理1</p>
 
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">brew install nvm <span class="c"># 安装nvm,nvm是版本管理的工具</span>
+<span class="nb">source</span> <span class="k">$(</span>brew --prefix nvm<span class="k">)</span>/nvm.sh <span class="c">#安装完，在shell的配置文件(例如~/.bashrc)中加入配置</span>
+nvm ls <span class="c"># 查看有哪些node版本</span>
+nvm install v6.10.0 <span class="c">#安装某个版本  </span>
+nvm <span class="nb">alias </span>default v6.10.0 <span class="c"># 设置默认的哪个版本</span></code></pre></figure>
+
+
+  </div>
+
+  
+    <!-- 
+
+   -->
+
+<div id="disqus_thread"></div>
 <script>
-CKEDITOR.replace( 'editor1' ,{
-});
-CKEDITOR.editor.appendText("hello ");
-CKEDITOR.editor.insertHtml('<a href="//www.so.com">link</a>'); -->
-<!-- </script> -->
 
-<div>
-<h1> <a href="/jekyll/update/2017/01/20/welcome-to-jekyll.html">example </a></h1>
-<p> jekyll example </p>
-</div>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//hackooo.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-<div>
-<h1> <a href="/tech_node/node_install.html">node 安装 </a></h1>
-</div>
 
+<script id="dsq-count-scr" src="//hackooo.disqus.com/count.js" async></script>
+
+  
+</article>
 
       </div>
     </main>

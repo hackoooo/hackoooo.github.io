@@ -13,10 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: hackooo
-email: your-email@domain.com
+title: 道剑
+author: "小灰马"
+email: hackooop@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Full stack
+  聊聊技术，聊聊生活
 github:
   repository_url: "https://github.com/hackoooo/hackoooo.github.io"
 
@@ -29,9 +30,9 @@ github_username:  hackoooo
 markdown: kramdown
 
 # 主题
-# theme: minima
+theme: minima
 # theme: jekyll-theme-primer
-theme: jekyll-theme-hacker #https://github.com/pages-themes/hacker
+# theme: jekyll-theme-hacker #https://github.com/pages-themes/hacker
 gems:
   - jekyll-feed
 exclude:
@@ -43,8 +44,15 @@ collections:
     output: true
   tech_cpp:
     output: true
+  tech_node:
+    output: true
 
 default:
+  - scope:
+      path: ""
+      type: tech_node
+    values:
+      layout: page
   - scope:
       path: ""
       type: tech_cpp
